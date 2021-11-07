@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+*::before,
+::after {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    max-width: 100%;
+}
+
+body {
+    background-color: #EEEEEE;
+}
+
+.siteheader {
+    margin: 20px;
+}
+
+@media(min-width: 500px) {
+    .siteheader {
+        margin: 60px 0 100px;
+    }
+}
+
+.seracherForm {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 500px) {
+    .seracherForm {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.seracherForm>input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    margin-right: 10px;
+    border: 1px solid #DDD;
+    border-radius: 4px;
+}
+
+.seracherForm>button {
+    white-space: nowrap;
+    padding: 0 28px;
+    color: white;
+    border: none;
+    background-color: #0282B9;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+/*内容部分*/
+.sitecontent {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.sitelist {
+    display: flex;
+    margin: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media (min-width: 500px) {
+    .sitelist {
+        margin-left: 0;
+        margin-right: -25px;
+        justify-content: flex-start;
+    }
+
+}
+
+.sitelist .site {
+    border: 1px solid #ddd;
+    width: 160px;
+    padding: 20px 0;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.sitelist .site:hover {
+    background-color: #e8e8e97e;
+}
+
+
+
+.sitelist li {
+
+    margin-bottom: 10px;
+}
+
+@media (min-width: 500px) {
+    .sitelist li {
+        margin-right: 25px;
+    }
+}
+
+.sitelist .site>.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    font-size: 64px;
+    text-transform: uppercase;
+}
+
+.sitelist .site>.link {
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.sitelist .site>.close {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    display: none;
+    cursor: default;
+}
+
+.sitelist .site:hover>.close {
+    display: block;
+}
+
+.sitelist .addButton {
+    border: 1px solid #ddd;
+    width: 160px;
+    background: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sitelist .addButton .icon-wrapper {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sitelist .addButton .icon {
+    width: 56px;
+    height: 56px;
+}
